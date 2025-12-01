@@ -8,7 +8,7 @@ const MainText = () => {
         </p>
         <p>
           Gostaria de lhe apresentar a Medicina Tradicional Chinesa, com o
-          objetivo é mostrar o alcance dessa abordagem médica e como ela pode
+          objetivo de mostrar o alcance dessa abordagem médica e como ela pode
           transformar sua saúde e qualidade de vida.
         </p>
         <p>

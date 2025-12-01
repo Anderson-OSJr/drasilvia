@@ -3,6 +3,7 @@ import TopMenuBar from "./components/TopMenuBar";
 import Logo from "./components/Logo";
 import ImageDraSilvia from "./components/ImageDraSilvia";
 import MainText from "./components/MainText";
+import Contatos from "./components/Contatos";
 
 export default function Home() {
   return (
@@ -31,7 +32,9 @@ export default function Home() {
 
         <div className="h-48 container max-w-3xl flex flex-col items-center bg-[#DECCA6]"></div>
         <div className="h-48 container max-w-3xl flex flex-col items-center bg-[#B8B68F]"></div>
-        <div className="h-48 container max-w-3xl flex flex-col items-center bg-[#DBD3C6]"></div>
+        <div className="h-80 container max-w-3xl flex flex-col items-center bg-[#DBD3C6]">
+          <Contatos />
+        </div>
         <div className="h-36 container max-w-3xl flex flex-col items-center bg-[#EBE6D2]"></div>
       </div>
     </>

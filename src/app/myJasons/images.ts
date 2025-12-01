@@ -9,16 +9,9 @@ export interface CarouselImage {
 export const carouselImages: CarouselImage[] = [
   {
     id: 1,
-    src: "/draSilvia5.jpg",
+    src: "/laserAcupuntura.png",
     alt: "Consulta médica com acupuntura",
-    width: 250,
-    height: 200,
-  },
-  {
-    id: 2,
-    src: "/draSilva4.jpg",
-    alt: "Consulta médica com acupuntura",
-    width: 350,
+    width: 379,
     height: 300,
   },
   {

@@ -8,7 +8,7 @@ import Image from "next/image";
 const ArrowLeft = () => (
   <svg
     xmlns="www.w3.org"
-    className="h-8 w-8 text-white"
+    className="h-4 w-4 text-[#e7e1cc] hover:cursor-pointer"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -21,7 +21,7 @@ const ArrowLeft = () => (
 const ArrowRight = () => (
   <svg
     xmlns="www.w3.org"
-    className="h-8 w-8 text-white"
+    className="h-4 w-4 text-[#e7e1cc] hover:cursor-pointer"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -55,9 +55,9 @@ const MidleCarousel: React.FC<CarouselProps> = ({ images }) => {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
+    <div className="relative w-sm md:w-md h-auto max-w-dvw shadow-2xs">
       {/* Container das Imagens */}
-      <div className="relative h-dvh">
+      <div className="relative h-96 border-2 border-[#B3B18B] rounded-2xl">
         {carouselImages.map((image, index) => (
           <Image
             key={image.id}
@@ -65,8 +65,7 @@ const MidleCarousel: React.FC<CarouselProps> = ({ images }) => {
             alt={image.alt}
             width={image.width}
             height={image.height}
-            // Classes do Tailwind para mostrar/esconder e transição simples
-            className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
+            className={`object-cover absolute top-0 p-2 border-0 rounded-2xl left-0 w-full h-full transition-opacity duration-700 ease-in-out ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
           />
@@ -76,14 +75,14 @@ const MidleCarousel: React.FC<CarouselProps> = ({ images }) => {
       {/* Botões de Navegação (Setas) */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition duration-300 z-10"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#6d6c55] hover:bg-[#979675] bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition duration-300 z-10"
         aria-label="Imagem anterior"
       >
         <ArrowLeft />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition duration-300 z-10"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#6d6c55] hover:bg-[#979675] bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition duration-300 z-10"
         aria-label="Próxima imagem"
       >
         <ArrowRight />
