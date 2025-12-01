@@ -6,7 +6,7 @@ const ImageDraSilvia = () => {
       alt="Fotografia da Dra. Sílvia"
       width={350}
       height={300}
-      className="border-0 rounded-lg drop-shadow-blue-950 shadow-2xl w-sm my-6"
+      className="border-1 border-amber-100 shadow-xl rounded-lg drop-shadow-blue-950 shadow-3xl w-sm my-6"
     />
   );
 };
