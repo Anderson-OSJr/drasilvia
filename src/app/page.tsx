@@ -26,16 +26,15 @@ export default function Home() {
         </div>
 
         {/* Carousel */}
-        <div className="flex flex-row justify-center w-3xl md:max-w-3xl bg-[#DBD3C6] py-6">
+        <div className="flex flex-row justify-center w-3xl md:max-w-3xl bg-[#DECCA6] py-6">
           <MidleCarousel images={[]} />
         </div>
 
-        <div className="h-48 container max-w-3xl flex flex-col items-center bg-[#DECCA6]"></div>
-        <div className="h-48 container max-w-3xl flex flex-col items-center bg-[#B8B68F]"></div>
-        <div className="h-80 container max-w-3xl flex flex-col items-center bg-[#DBD3C6]">
+        <div className="h-48 container max-w-3xl flex flex-col items-center bg-[#DBD3C6]"></div>
+        <div className="h-auto container max-w-3xl flex flex-col items-center bg-[#B8B68F]">
           <Contatos />
         </div>
-        <div className="h-36 container max-w-3xl flex flex-col items-center bg-[#EBE6D2]"></div>
+        <div className="h-16 container max-w-3xl flex flex-col items-center bg-[#EBE6D2]"></div>
       </div>
     </>
   );
