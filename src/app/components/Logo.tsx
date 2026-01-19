@@ -8,7 +8,7 @@ const Logo = () => {
         alt="Logo da Dra. Sílvia"
         width={60}
         height={90}
-        className="m-6"
+        className="#"
       />
     </div>
   );

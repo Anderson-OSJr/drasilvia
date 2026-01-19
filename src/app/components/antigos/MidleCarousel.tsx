@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import carouselImages from "../myJasons/images";
+import carouselImages from "../../myJasons/images";
 import Image from "next/image";
 
 // Ícones de seta simples (você pode usar uma biblioteca como react-icons se preferir)
