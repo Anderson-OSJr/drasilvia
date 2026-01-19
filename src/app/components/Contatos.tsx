@@ -7,9 +7,12 @@ import Whatsapp from "./Whatsapp";
 const Contatos = () => {
   return (
     <>
-      <div className="flex flex-col items-center gap-8 my-2">
-        <div className="flex flex-col md:flex-row md:justify-between gap-8">
-          <div className="#">
+      <section
+        className="mx-auto max-w-5xl mt-8 bg-[#f3eee2] shadow-2xl"
+        id="contatos"
+      >
+        <div className="flex flex-col items-center container md:flex-row md:justify-between p-6 gap-10">
+          <div className="flex flex-col">
             <p className="text-3xl font-bold text-[#696252] font-sans mb-2">
               Entre em contato
             </p>
@@ -34,11 +37,11 @@ const Contatos = () => {
               </p>
             </div>
           </div>
-          <div className="h-56 mb-4">
+          <div className="h-62 mb-4 p-3 bg-[#C5A059] rounded-2xl">
             <GoogleMap />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

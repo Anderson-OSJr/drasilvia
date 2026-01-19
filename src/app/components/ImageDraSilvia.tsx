@@ -1,7 +1,7 @@
 import Image from "next/image";
 const ImageDraSilvia = () => {
   return (
-    <div className="flex container justify-center mx-auto pt-6">
+    <section id="inicio" className="flex container justify-center mx-auto pt-6">
       <Image
         src="/dra_silvia.jpg"
         alt="Fotografia da Dra. Sílvia"
@@ -9,7 +9,7 @@ const ImageDraSilvia = () => {
         height={300}
         className="rounded-lg shadow-lg"
       />
-    </div>
+    </section>
   );
 };
 export default ImageDraSilvia;

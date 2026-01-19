@@ -14,10 +14,7 @@ const MainNav = () => {
   };
 
   return (
-    <section
-      id="#"
-      className="h-44 flex items-center justify-between bg-[#F9F7F2] fixed top-0 right-0 left-0 max-w-5xl mx-auto z-50 shadow-md"
-    >
+    <section className="h-44 flex items-center max-w-5xl justify-between bg-[#f3eee2] fixed top-0 right-0 left-0  mx-auto z-50 shadow-md">
       <div className="flex container gap-2 items-center">
         <div className="w-fit p-6 lg:p-10">
           <Logo />
@@ -26,7 +23,10 @@ const MainNav = () => {
           Dra. Sílvia Barreto
         </div>
       </div>
-      <button className="w-fit p-6 text-[#3a4928] md:hidden" onClick={setMenu}>
+      <button
+        className="w-fit p-6 text-[#3a4928] md:hidden hover:cursor-pointer"
+        onClick={setMenu}
+      >
         <IoMenu size={40} />
       </button>
       <div className="hidden md:flex">
