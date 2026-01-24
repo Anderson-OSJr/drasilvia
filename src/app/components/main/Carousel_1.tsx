@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import carouselImages from "../myJasons/images";
+import carouselImages from "@/app/myJasons/images";
 import Image from "next/image";
 
 import { FaArrowAltCircleLeft } from "react-icons/fa";
@@ -29,7 +29,7 @@ const Carousel_1 = () => {
   };
 
   return (
-    <section className="flex gap-2 justify-between container mx-auto items-center bg-[#dabe8c] mt-6 max-w-5xl px-2 py-4">
+    <section className="flex gap-2 justify-between container mx-auto items-center bg-[#f3eee2] mt-6 max-w-5xl px-2 py-4">
       <button
         className="text-[#8e9266] hover:text-[#a6aa7d] hover:cursor-pointer"
         onClick={previousImage}
@@ -45,7 +45,7 @@ const Carousel_1 = () => {
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
-                className="rounded-xl shadow-lg"
+                className="rounded-lg shadow-lg shadow-emerald-900/40"
               />
             )}
           </div>

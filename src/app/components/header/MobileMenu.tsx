@@ -1,8 +1,8 @@
-import { menu_items } from "../myJasons/menuItems";
+import { menu_items } from "@/app/myJasons/menuItems";
 
-const TopMenu = () => {
+const MobileMenu = () => {
   return (
-    <div className="flex flex-row mr-8 xl:mr-10 text-[#3a4928] text-base">
+    <div className="flex flex-col mr-4 text-[#3a4928] text-base -mt-[80px] shadow p-2 bg-white rounded-xl">
       {menu_items.map((item) => (
         <nav key={item.index}>
           <ul>
@@ -15,4 +15,4 @@ const TopMenu = () => {
     </div>
   );
 };
-export default TopMenu;
+export default MobileMenu;

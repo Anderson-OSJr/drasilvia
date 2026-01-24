@@ -14,7 +14,7 @@ const MainNav = () => {
   };
 
   return (
-    <section className="h-44 flex items-center max-w-5xl justify-between bg-[#f3eee2] fixed top-0 right-0 left-0  mx-auto z-50 shadow-md">
+    <section className="h-32 flex items-center max-w-5xl justify-between bg-[#f3eee2] fixed top-0 right-0 left-0  mx-auto z-50 shadow-md">
       <div className="flex container gap-2 items-center">
         <div className="w-fit p-6 lg:p-10">
           <Logo />

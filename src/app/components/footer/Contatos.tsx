@@ -8,7 +8,7 @@ const Contatos = () => {
   return (
     <>
       <section
-        className="mx-auto max-w-5xl mt-8 bg-[#f3eee2] shadow-2xl"
+        className="mx-auto max-w-5xl mt-8 bg-[#B1D0C8] shadow-2xl"
         id="contatos"
       >
         <div className="flex flex-col items-center container md:flex-row md:justify-between p-6 gap-10">
